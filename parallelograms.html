@@ -13,8 +13,6 @@
         <link rel="stylesheet" href="reveal.js/dist/reveal.css">
         <link rel="stylesheet" href="reveal.js/dist/theme/black.css" id="theme">
         <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
-
-        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -24,23 +22,31 @@
                 <section>
                     <h2> Параллелограммы </h2>
                 </section>
+                <section fv-background, fv-video="BasicExample.json">
+                    <!-- Не разобрался -->
+                </section>
+
+                <script src="js/add_video_slide.js" slide_scene="SimpleVideoSlide"></script>
             </div>
         </div>
 
+        <script src="js/video_slide.js"></script>
         <script src="reveal.js/dist/reveal.js"></script>
         <script src="reveal.js/plugin/zoom/zoom.js"></script>
         <script src="reveal.js/plugin/notes/notes.js"></script>
         <script src="reveal.js/plugin/search/search.js"></script>
         <script src="reveal.js/plugin/markdown/markdown.js"></script>
         <script src="reveal.js/plugin/highlight/highlight.js"></script>
+        <script src="reveal.js/plugin/manim/manim.js"></script>
 
         <script>
             Reveal.initialize({
                 controls: true,
                 center: true,
                 hash: true,
+                autoPlayMedia: false,
 
-                plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+                plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealManim ]
             });
         </script>
     </body>

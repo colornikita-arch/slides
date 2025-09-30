@@ -27,6 +27,11 @@
                     <video data-autoplay src="video_slides/1.mp4"></video>
                 </section>
 
+                <section>
+                    <video src="video_slides/1.mp4" data-preview-video>
+                    <img src="video_slides/image.png" data-preview-video="video_slides/1.mp4">
+                    </video>
+                </section>
 
                 <!--
                 <section fv-background, fv-video="BasicExample.json">
@@ -49,7 +54,7 @@
                 controls: true,
                 center: true,
                 hash: true,
-                autoPlayMedia: false,
+                autoPlayMedia: true,
 
                 plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealManim ]
             });

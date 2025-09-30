@@ -22,15 +22,26 @@
                 <section>
                     <h2> Параллелограммы </h2>
                 </section>
-                <section fv-background, fv-video="BasicExample.json">
-                    <!-- Не разобрался -->
-                </section>
 
-                <script src="js/add_video_slide.js" slide_scene="SimpleVideoSlide"></script>
+<section class="video-stepper">
+    <!-- Unlike the other <video> element, this one is not absolutely
+         positioned. We hide it with CSS, but use it to reserve space
+         on the slide and compute the optimal width and height. -->
+    <video class="placeholder stretch">
+        <source src="video_slides/1.mp4">
+    </video>
+
+</section>
+
+
+                <!--
+                <section fv-background, fv-video="BasicExample.json">
+                </section>
+                -->
+
             </div>
         </div>
 
-        <script src="js/video_slide.js"></script>
         <script src="reveal.js/dist/reveal.js"></script>
         <script src="reveal.js/plugin/zoom/zoom.js"></script>
         <script src="reveal.js/plugin/notes/notes.js"></script>
